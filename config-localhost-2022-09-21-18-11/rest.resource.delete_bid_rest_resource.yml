@@ -1,0 +1,18 @@
+uuid: 76adbe64-837d-4886-b3ca-e8798ce40b5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - azuresimple
+    - basic_auth
+    - serialization
+id: delete_bid_rest_resource
+plugin_id: delete_bid_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth

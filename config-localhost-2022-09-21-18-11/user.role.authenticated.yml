@@ -1,0 +1,30 @@
+uuid: 9a0e1787-16ab-4458-b50b-7d6edfae2f0b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'administer account settings'
+  - 'administer rest resources'
+  - 'create auctions content'
+  - 'delete own auctions content'
+  - 'edit own auctions content'
+  - 'post comments'
+  - 'restful get user_profile'
+  - 'restful post delete_bid_rest_resource'
+  - 'restful post get_all_bids_rest_resource'
+  - 'restful post get_best_bid_rest_resource'
+  - 'restful post get_bid_rest_resource'
+  - 'restful post get_bids_rest_resource'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

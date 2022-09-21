@@ -1,0 +1,35 @@
+uuid: 0cd22612-d42d-4c70-b420-b0cb72cd1073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.body
+    - node.type.about_us
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

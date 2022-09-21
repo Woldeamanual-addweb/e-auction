@@ -1,0 +1,23 @@
+uuid: 669903b4-3e90-4fae-a599-5120746b54bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: auction
+label: Auction
+type: 'canonical_entities:node'
+pattern: 'auctions/[node:title]'
+selection_criteria:
+  49e46535-8224-4dc5-9bb4-f7a5e8800abf:
+    id: 'entity_bundle:node'
+    bundles:
+      auctions: auctions
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 49e46535-8224-4dc5-9bb4-f7a5e8800abf
+selection_logic: and
+weight: -5
+relationships: {  }

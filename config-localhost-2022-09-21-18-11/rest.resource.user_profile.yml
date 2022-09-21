@@ -1,0 +1,18 @@
+uuid: 8983fa93-fa42-4df2-9d9c-56e4759a4f46
+langcode: en
+status: false
+dependencies:
+  module:
+    - azuresimple
+    - serialization
+    - user
+id: user_profile
+plugin_id: user_profile
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

@@ -1,0 +1,17 @@
+uuid: d97bcfc4-5bd9-452a-8728-5f1343b87137
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'About Us'
+type: about_us
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

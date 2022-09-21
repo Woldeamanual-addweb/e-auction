@@ -1,0 +1,21 @@
+uuid: 5bbdb61e-becc-4d9f-8a41-5a79a1fc07d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dea
+    - node.type.auctions
+id: node.auctions.field_dea
+field_name: field_dea
+entity_type: node
+bundle: auctions
+label: 'Dead Time'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1663094598
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

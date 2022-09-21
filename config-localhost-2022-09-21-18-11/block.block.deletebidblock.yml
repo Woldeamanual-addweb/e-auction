@@ -1,0 +1,28 @@
+uuid: 3b1f6706-e7e5-4b9f-9a31-d0c8e5bd5a9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - azuresimple
+    - ctools
+  theme:
+    - bartik
+id: deletebidblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'Delete Bid Block'
+settings:
+  id: 'Delete Bid Block'
+  label: 'Delete Bid Block'
+  provider: azuresimple
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      auctions: auctions
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

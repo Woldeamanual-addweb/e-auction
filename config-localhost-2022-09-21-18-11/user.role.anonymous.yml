@@ -1,0 +1,21 @@
+uuid: c827ab72-fa76-4cfb-9485-1dc69793cd6a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'administer users'
+  - 'change own username'
+  - 'edit any auctions content'
+  - 'restful post user_registration'
+  - 'search content'
+  - 'use text format restricted_html'

@@ -1,0 +1,52 @@
+uuid: 31ecf2c6-7228-4fac-8eec-959f43c0c4aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.auctions.body
+    - field.field.node.auctions.field_dea
+    - field.field.node.auctions.field_item_image
+    - field.field.node.auctions.field_reserve
+    - node.type.auctions
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.auctions.teaser
+targetEntityType: node
+bundle: auctions
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_item_image:
+    type: image
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_dea: true
+  field_reserve: true

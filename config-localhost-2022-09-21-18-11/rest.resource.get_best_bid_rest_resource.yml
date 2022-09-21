@@ -1,0 +1,18 @@
+uuid: 607986ff-e264-47ea-94aa-f0ae92fea94e
+langcode: en
+status: true
+dependencies:
+  module:
+    - azuresimple
+    - basic_auth
+    - serialization
+id: get_best_bid_rest_resource
+plugin_id: get_best_bid_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth

@@ -1,0 +1,28 @@
+uuid: 8500eb15-5af7-4151-9cfd-f49580534602
+langcode: en
+status: true
+dependencies:
+  module:
+    - azuresimple
+    - ctools
+  theme:
+    - bartik
+id: bestbidblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'Best Bid Block'
+settings:
+  id: 'Best Bid Block'
+  label: 'Best Bid Block'
+  provider: azuresimple
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      auctions: auctions
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

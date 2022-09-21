@@ -1,0 +1,18 @@
+uuid: b946a47f-1a1e-4ada-a69a-3df2360a4da9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_dea
+field_name: field_dea
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 05143b87-2df2-4dcb-ae48-2eec0a088266
+langcode: en
+status: true
+dependencies:
+  module:
+    - azuresimple
+    - ctools
+  theme:
+    - bartik
+id: bidblock
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'Bid Block'
+settings:
+  id: 'Bid Block'
+  label: 'Bid Block'
+  provider: azuresimple
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      auctions: auctions
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
